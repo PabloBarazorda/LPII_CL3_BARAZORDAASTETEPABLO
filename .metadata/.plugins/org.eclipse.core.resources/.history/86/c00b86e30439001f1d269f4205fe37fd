@@ -1,0 +1,57 @@
+package dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import interfaces.IProducto;
+import model.TblProductocl3;
+
+public class ClassProducto implements IProducto {
+
+	@Override
+	public void RegistrarProducto(TblProductocl3 producto) {
+		// TODO Auto-generated method stub
+		//establecemos conexion con la unidad persistencia
+		EntityManagerFactory fabr=Persistence.createEntityManagerFactory("ExamenCL3BarazordaAstetePablo");
+		//permite gestionar entidades
+		EntityManager em=fabr.createEntityManager();
+		//iniciar transaccion
+		em.getTransaction().begin();
+		//registramos
+		em.persist(producto);
+		//emitimos mensaje por consola
+		System.out.println("producto registrado en la BD");
+		//confirmamos
+		em.getTransaction().commit();
+		//cerramos transaccion
+		em.close();		
+	} // fin del metodo registrar
+
+	@Override
+	public void ActualizarProducto(TblProductocl3 producto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void EliminarProducto(TblProductocl3 producto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public TblProductocl3 BuscarProducto(TblProductocl3 producto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<TblProductocl3> ListarProducto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+} // fin de la clase producto

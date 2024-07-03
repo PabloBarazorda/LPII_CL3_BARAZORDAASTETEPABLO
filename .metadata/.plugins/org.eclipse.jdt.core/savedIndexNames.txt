@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+C:\Users\user\OneDrive\Escritorio\LPII_CL3_BARAZORDAASTETEPABLO\.metadata\.plugins\org.eclipse.jdt.core
+3001419206.index

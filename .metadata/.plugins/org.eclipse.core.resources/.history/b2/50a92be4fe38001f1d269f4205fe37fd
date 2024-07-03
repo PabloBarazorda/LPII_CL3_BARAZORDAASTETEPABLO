@@ -1,0 +1,9 @@
+package interfaces;
+
+import model.TblUsuariocl3;
+
+public interface IUsuario {
+
+	//registramos crud
+	public void RegistrarUsuario (TblUsuariocl3 usuario);
+}

@@ -1,0 +1,14 @@
+package dao;
+
+import interfaces.IUsuario;
+import model.TblUsuariocl3;
+
+public class ClassUsuario implements IUsuario {
+
+	@Override
+	public void ValidarUsuario(TblUsuariocl3 usuario) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

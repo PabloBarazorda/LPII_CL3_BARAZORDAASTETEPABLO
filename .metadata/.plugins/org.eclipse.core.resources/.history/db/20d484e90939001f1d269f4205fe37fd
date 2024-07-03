@@ -1,0 +1,10 @@
+package interfaces;
+
+import model.TblUsuariocl3;
+
+public interface IUsuario {
+
+	//registramos crud
+	public void ValidarUsuario (TblUsuariocl3 usuario);
+	boolean esUsuarioValido(String nombre, String contrasena);
+}

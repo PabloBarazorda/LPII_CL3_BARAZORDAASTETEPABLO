@@ -1,0 +1,20 @@
+package test;
+
+import dao.ClassProducto;
+import model.TblProductocl3;
+
+public class TestEntidadProducto {
+
+	public static void main(String[] args) {
+		
+		TblProductocl3 producto = new TblProductocl3();
+		ClassProducto imp = new ClassProducto();
+		
+		producto.setNombrecl3("");
+		producto.setPreciocompracl3(0);
+		producto.setPrecioventacl3(0);
+		producto.setEstadocl3("");
+		producto.setDescripcl3("");
+	}
+
+}

@@ -1,0 +1,26 @@
+package test;
+
+import dao.ClassProducto;
+import model.TblProductocl3;
+
+public class TestEntidadProducto {
+
+	public static void main(String[] args) {
+		
+		TblProductocl3 producto = new TblProductocl3();
+		ClassProducto crud = new ClassProducto();
+		
+		producto.setNombrecl3("Leche");
+		producto.setPreciocompracl3(5);
+		producto.setPrecioventacl3(3);
+		producto.setEstadocl3("vigente");
+		producto.setDescripcl3("oferta");
+		
+		//metodo registrar
+		crud.RegistrarProducto(producto);
+		
+		
+		
+	}
+
+}
